@@ -1,0 +1,322 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+   
+    color: #fff;
+    padding: 15px 0; /* Increase the padding to increase the size of the navbar */
+    background-color: #333;
+    position: fixed; /* Keep the navbar fixed at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+    align-items: center;
+}
+
+
+
+
+
+header nav ul {
+    float: right;
+    list-style: none;
+}
+
+
+
+header nav ul li {
+ 
+    margin-left: 20px;
+    display: inline-block;
+
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+
+.search-bar {
+    margin-left: 20px;
+    float: left;
+    position: relative; /* Position relative for the search input */
+}
+
+
+.search-bar input[type="text"] {
+    padding: 12px; /* Increase padding to increase the size of the search bar */
+    border: none;
+    border-radius: 5px;
+    width: 250px; /* Increase width of search bar */
+    transition: width 0.4s ease; /* Smooth width transition */
+    background-color: #f2f2f2; /* Light background color */
+}
+
+.search-bar input[type="text"]:focus {
+    width: 350px; /* Expand on focus */
+}
+
+
+.search-bar button {
+    padding: 12px 20px; /* Increase padding to match the search bar */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.search-bar button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+
+/* Hero section styles */
+/* Hero section styles */
+.hero {
+    background-image: url('bg5.jpg'); /* Add your background image path */
+    
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: #030000;
+    padding: 100px 0;
+    text-align: center;
+    
+}
+.hero img  {
+    opacity: 0.8; /* Adjust the opacity value as needed */
+}
+
+
+
+
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* Features section styles */
+.features {
+    
+    padding: 80px 0;
+}
+
+.features h2 {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; 
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.features {
+    background-color: #f7f7f7; /* Example background color */
+    padding: 50px 0; /* Example padding */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.feature-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap if container width is not enough */
+}
+
+.feature-item {
+    background-color: #3498db; /* Example background color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    flex-basis: calc(25% - 20px); /* Adjust width and margin between items */
+    margin-bottom: 20px; /* Example margin between items */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.feature-item p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.key-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.key-features li {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Explore destinations section styles */
+.explore-destinations {
+    padding: 80px 0;
+}
+
+.explore-destinations h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.destination-card {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.destination-card img {
+    width: 100%;
+    height: auto;
+}
+
+.destination-card .destination-info {
+    padding: 20px;
+}
+
+.destination-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destination-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.destination-card .explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Community insights section styles */
+.community-insights {
+    background-color: #f7f7f7; /* Example background color */
+    padding: 50px 0; /* Example padding */
+}
+
+.community-insights h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px; /* Adjust margin as needed */
+}
+
+.testimonial {
+    background-color: #fff; /* Example background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(48% - 20px); /* Adjust width and margin between items */
+    margin-bottom: 20px; /* Adjust margin between items */
+    position: relative;
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    margin: 0;
+}
+
+.testimonial-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px; /* Adjust size of the circle */
+    height: 80px;
+    background-color: #3498db; /* Example background color */
+    border-radius: 50%; /* Make it circular */
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
