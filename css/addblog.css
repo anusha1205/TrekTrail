@@ -1,0 +1,34 @@
+.writing-area {
+    width: calc(100% - 80px); /* Adjusted width considering left and right margins */
+    margin: 40px auto;
+  
+    margin-left: 25px;/* 40px margin from top and bottom, auto left and right margin for centering */
+    padding: 10px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 200px;
+    font-size: 16px;
+    background-color: #d8f5f5; /* Set the same background color as the body */
+}
+
+/* Style for the upload and submit section */
+.upload-submit input[type="file"],
+.upload-submit button {
+    padding: 12px 20px; /* Adjust padding to increase button size */
+    font-size: 18px; /* Adjust font size to increase button size */
+    border: none;
+    cursor: pointer;
+    background-color: #d8f5f5;
+    border: #000000; /* Set button background color */
+    color: rgb(8, 61,77); /* Set button text color */
+    transition: background-color 0.3s ease;
+    border: 1px solid #000000;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.upload-submit input[type="file"]:hover,
+.upload-submit button:hover {
+    background-color: #cccccc; /* Change background color on hover */
+}

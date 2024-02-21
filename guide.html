@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+      
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: rgb(8, 61, 77); /* Changed button color to match heading */
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+
+
+     
+    </style>
+</head>
+<body>
+    <nav>
+
+
+        <ul class="navbar">
+            <li>
+                <a href="/syrus/index.php">Home</a>
+                <a href="/syrus/community.php">Community Forum</a>
+                <a href="/syrus/feedback.php">Feedback</a>
+                <a href="api.html">Get Weather</a>
+                <a href="./about.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="/syrus/itinerary.php">Itinerary Cart</a>
+                <a href="/syrus/signup.php">Register Now</a>
+                <a href="/syrus/login.php">Login</a>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Search Travel Guide</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter a destination...">
+            <button onclick="searchGuides()">Search</button>
+        </div>
+        <ul id="guidesList">
+            <!-- Guides will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script>
+        const guides = {
+            "paris": [
+                { name: "Guide 1", contact: "+1234567890" },
+                { name: "Guide 2", contact: "+1987654321" },
+                { name: "Guide 3", contact: "+1122334455" }
+            ],
+            // Other destinations...
+        };
+
+        function searchGuides() {
+            const searchInput = document.getElementById('searchInput');
+            const searchValue = searchInput.value.toLowerCase();
+            const guidesList = document.getElementById('guidesList');
+            guidesList.innerHTML = '';
+
+            if (searchValue.trim() === '') {
+                return;
+            }
+
+            if (guides.hasOwnProperty(searchValue)) {
+                guides[searchValue].forEach(guide => {
+                    const li = document.createElement('li');
+                    li.textContent = `${guide.name} - Contact: ${guide.contact}`;
+                    guidesList.appendChild(li);
+                });
+            } else {
+                const li = document.createElement('li');
+                li.textContent = 'No guides found for this destination.';
+                guidesList.appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>

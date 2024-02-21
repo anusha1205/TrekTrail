@@ -26,18 +26,20 @@
 
         <div class="content" id="home">
             <nav>
-                <img src="images/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
-
+                
                 <ul class="navbar" styke="gap:0px;">
                     <li>
                         <a href="/syrus/index.php">Home</a>
-                        <a href="#locations">Locations</a>
-                        <a href="#package">Key Features</a>
+                        <a href="/syrus/location.html">Locations</a>
                         <a href="/syrus/community.php">Community Forum</a>
-                        <a href="/syrus/contact.php">Feedback</a>
-                        <a href="/syrus/contact.php">Contact Us</a>
+                        <a href="api.html">Get Weather</a>
+                        <a href="guide.html">Book Guide</a>
+
+                        <a href="/syrus/feedback.php">Feedback</a>
+                        <a href="/syrus/contact.php">Contact</a>
                     </li>
                     <li>
+                        <a href="/syrus/results.php">Itinerary</a>
                         <a href="/syrus/signup.php">Register Now</a>
                         <a href="/syrus/login.php">Login</a>
                     </li>
@@ -45,10 +47,11 @@
             </nav>
 
             <div class="title">
-                <h1>TREK-TRAVEL</h1>
-                <p>DISCOVER NEW DESTINATIONS AND PLAN YOUR TRIP WITH TREK-TRAVEL!</p>
-                <a href="./register.html" class="button">Explore Us!</a>
-                <a href="#" class="button">Create Itinerary</a> <!-- New button -->
+                <h1>TREK-TRAIL</h1>
+                <p>DISCOVER NEW DESTINATIONS AND PLAN YOUR TRIP WITH TREK-TRAIL !</p>
+                <a href="/syrus/community.php#blog-locations" class="button">View Blog post</a>
+                <a href="./view_itinerary.php" class="button">View Your Itinerary</a>
+                <a href="/syrus/results.php" class="button">Create Itinerary</a> <!-- New button -->
             </div>
         </div>
     </div>
@@ -65,7 +68,7 @@ Locations -->
 
         <div class="location-content">
 
-            <a href="./locations.html#kashmir" target="_blank">
+            <a href="/syrus/location.html#kashmir" target="_blank">
                 <div class="col-content">
                     <img src="images/l1.jpg" alt="l1">
                     <h5>India</h5>
@@ -75,7 +78,7 @@ Locations -->
 
 
 
-            <a href="./locations.html#istanbul" target="_blank">
+            <a href="/syrus/location.html#istanbul" target="_blank">
                 <div class="col-content">
                     <img src="images/l2.jpg" alt="">
                     <h5>Turkey</h5>
@@ -83,7 +86,7 @@ Locations -->
                 </div>
             </a>
 
-            <a href="./locations.html#paris" target="_blank">
+            <a href="/syrus/location.html#paris" target="_blank">
                 <div class="col-content">
                     <img src="images/l3.jpg" alt="">
                     <h5>France</h5>
@@ -91,7 +94,7 @@ Locations -->
                 </div>
             </a>
 
-            <a href="./locations.html#bali" target="_blank">
+            <a href="/syrus/location.html#bali" target="_blank">
                 <div class="col-content">
                     <img src="images/l4.jpg" alt="">
                     <h5>Indonesia</h5>
@@ -99,7 +102,7 @@ Locations -->
                 </div>
             </a>
 
-            <a href="./locations.html#dubai" target="_blank">
+            <a href="/syrus/location.html#dubai" target="_blank">
                 <div class="col-content">
                     <img src="images/l5.jpg" alt="">
                     <h5>United Arab Emirates</h5>
@@ -107,7 +110,7 @@ Locations -->
                 </div>
             </a>
 
-            <a href="./locations.html#geneva" target="_blank">
+            <a href="/syrus/location.html#geneva" target="_blank">
                 <div class="col-content">
                     <img src="images/l6.jpg" alt="">
                     <h5>Switzerland</h5>
@@ -115,7 +118,7 @@ Locations -->
                 </div>
             </a>
 
-            <a href="./locations.html#port-blair" target="_blank">
+            <a href="/syrus/location.html#port-blair" target="_blank">
                 <div class="col-content">
                     <img src="images/l7.jpg" alt="">
                     <h5>Andaman & Nicobar</h5>
@@ -123,7 +126,7 @@ Locations -->
                 </div>
             </a>
 
-            <a href="./locations.html#rome" target="_blank">
+            <a href="/syrus/location.html#rome" target="_blank">
                 <div class="col-content">
                     <img src="images/l8.jpg" alt="">
                     <h5>Italy</h5>
@@ -157,7 +160,7 @@ Locations -->
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" href="/syrus/community.php" >
                 <div class="image">
                     <img src="images/p2.jpg" alt="">
                     <h3>Community-driven platform</h3>
@@ -211,7 +214,7 @@ Locations -->
 
     <!-- Footer Section -->
 
-    <section class="footer">
+    <section class="footer" style="color:white;">
         <div class="foot">
             <div class="footer-content">
                 <div class="footlinks">

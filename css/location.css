@@ -1,0 +1,140 @@
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Set default font */
+    line-height: 1.6;
+}
+
+.location-body {
+    background-color: #f4f4f4; /* Set background color */
+}
+
+
+
+/* Location section styles */
+.location-section {
+    padding: 50px 20px;
+}
+
+.location-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.location-heading h1 {
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    color: #333;
+}
+
+.location-heading span {
+    padding: 10px;
+    color: #ff7f50;
+}
+
+.location-detail {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.location-detail h1 {
+    padding-top: 10px;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.location-detail .stars {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.location-detail .stars a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.location-detail p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.location-img img {
+    padding-left: 19px;
+    padding-right: 19px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 20%;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.location-img img:hover {
+    filter: brightness(120%);
+    transform: scale(1.05);
+}
+nav{
+    height:60px;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(8, 61, 77);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo{
+    width: 60px;
+    margin: 2vh;
+    margin-left: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}

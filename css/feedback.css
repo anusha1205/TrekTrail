@@ -1,0 +1,115 @@
+.body{
+    background-color: rgb(79, 160, 163);
+}
+.container {
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+/* Style for the feedback cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.566);
+    margin-bottom: 7%;
+    padding: 6%;
+    /* Add padding for better readability */
+}
+.card-subtitle{
+    margin-top: 2%;
+}
+.card-text{
+    margin-top: 2%;
+}
+
+
+
+
+/* Style for the submit button */
+.btn-primary {
+    background-color: black;
+    border-color: #007bff;
+    color: #fff;
+    /* Set text color to white */
+    font-size: 16px;
+    /* Set font size */
+    font-family: 'Poppins', sans-serif;
+    /* Set font family */
+    padding: 10px 20px;
+    /* Add padding for better button appearance */
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border-color: #0056b3;
+}
+
+/* Style for the alerts */
+.alert {
+    margin-bottom: 20px;
+    font-size: 16px;
+    /* Set font size */
+    font-family: 'Poppins', sans-serif;
+    /* Set font family */
+}
+
+/* Center-align text */
+.text-center {
+    text-align: center;
+    margin-top: 2%;
+    /* Set font size */
+    font-family: 'Poppins', sans-serif;
+    /* Set font family */
+}
+
+/* Style for the form container */
+.feedback-form {
+    width: 80%;
+    margin: auto;
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for inputs and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the submit button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    cursor: pointer;
+}
+
+.btn{
+    margin-bottom: 6%;
+}
